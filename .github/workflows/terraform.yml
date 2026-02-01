@@ -38,9 +38,12 @@ jobs:
         run: terraform validate
 
       # Step 6: Terraform Plan
-      - name: Terraform Plan
-        run: terraform plan -out=tfplan
+      #- name: Terraform Plan
+     #   run: terraform plan -out=tfplan
 
       # Step 7: Terraform Apply
-      - name: Terraform Apply
-        run: terraform apply -auto-approve tfplan
+      #- name: Terraform Apply
+       # run: terraform apply -auto-approve tfplan
+
+      - name: Terraform Destroy
+        run: terrafrom destroy --auto-approve
