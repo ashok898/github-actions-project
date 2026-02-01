@@ -109,7 +109,7 @@ resource "aws_instance" "my_ec2" {
   subnet_id     = aws_subnet.public_subnet.id
   vpc_security_group_ids = [aws_security_group.web_sg.id]
 
-  key_name = "terraform-key"   # Replace with your existing AWS key pair name
+  key_name = "terrafrom-k8-key"   # Replace with your existing AWS key pair name
 
   root_block_device {
     volume_size           = 30
